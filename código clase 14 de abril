@@ -1,0 +1,69 @@
+{
+  double uno, dos; 
+  int op;
+  
+  do
+  {
+     printf(" --- Calculadora ---\n"); 
+     printf("\n¿Qué desea hacer\n"); 
+     printf("1) Sumar\n");
+     printf("2) Restar\n");
+     printf("3) Multiplicar\n"); 
+     printf("4) Dividir\n"); 
+     printf("5) Raíz\n"); 
+     printf("6) Potencia\n"); 
+     printf("7) Salir\n"); 
+     
+        do
+        { printf("Introduce una opción\n");
+          scanf("%d",&op);
+        }
+        while (op<1 || op>7);
+        
+        switch (op)
+        {
+        case 1:
+            printf("\tSumar\n");
+            printf("Introduzca los números a sumar separados por comas\n"); 
+            scanf("%lf, %lf",&uno, &dos);
+            printf("%lf + %lf = %lf\n", uno, dos, (uno + dos));
+            break; 
+        case 2:
+            printf("\tRestar\n");
+            printf("Introduzca los números a restar separados por comas\n"); 
+            scanf("%lf, %lf",&uno, &dos);
+            printf("%lf - %lf = %lf\n", uno, dos, (uno - dos));
+            break;
+        case 3:
+            printf("\tMultiplicar\n");
+            printf("Introduzca los números a multiplicar separados por comas\n"); 
+            scanf("%lf, %lf",&uno, &dos);
+            printf("%lf * %lf = %lf\n", uno, dos, (uno * dos));
+            break;
+        case 4:
+            printf("\tDividir\n");
+            printf("Introduzca los números a dividir separados por comas\n");
+            scanf("%lf, %lf",&uno, &dos);
+            printf("%lf / %lf = %.2lf\n", uno, dos, ((double)uno / dos)); 
+            break;
+        case 5:
+            printf("\tDividir\n");
+            printf("Introduzca los números a dividir separados por comas\n");
+            scanf("%lf, %lf",&uno, &dos);
+            printf("%lf / %lf = %.2lf\n", uno, dos, ((double)uno / dos)); 
+            break;
+        case 6:
+            printf("\tDividir\n");
+            printf("Introduzca los números a dividir separados por comas\n");
+            scanf("%lf, %lf",&uno, &dos);
+            printf("%lf / %lf = %.2lf\n", uno, dos, ((double)uno / dos)); 
+            break;
+        case 7: 
+            printf("\tSalir\n"); 
+            break;
+        default:
+            printf("\tOpción inválida.\n");
+      } 
+    }
+    while (op != 5); 
+}
